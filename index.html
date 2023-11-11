@@ -1,8 +1,301 @@
 <!DOCTYPE html>
 <html>
-<body>
+<title>MJ - Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <p>First Commit</p>
+<head>
+    <style>
+        #card-header {
+            font-size: 12px;
+        }
+        
+        #card-footer {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
 
+        #tile-game {
+            border-radius: 4px;
+            background: #336699;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-right: 10px;
+            max-width: fit-content;
+            float: left;
+        }
+
+        #tile-skill {
+            border-radius: 4px;
+            background: #339933;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-right: 10px;
+            max-width: fit-content;
+            float: left;
+        }
+
+        #tile-break {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #606060;">
+    <!-- Banner -->
+    <div class="w3-container w3-center"
+        style="background-color: #ffa000; background-image: linear-gradient(to right, #ffa000, #ffffff, #ffffff, #ffa000);">
+        <h1 style="font-size: 72px; margin: 0px;"><b>Max Jackman</b></h1>
+        <h4 style="margin: 0px;"><b>Unity Game Developer</b></h4>
+        <a href="mailto:max.jackman@outlook.com">max.jackman@outlook.com</a>
+        <br>
+        <a href="https://www.linkedin.com/in/max-jackman-13a90117b">linkedin.com/in/max-jackman</a>
+        <br>
+        <a href="https://github.com/ZopMaxima">github.com/ZopMaxima</a>
+        <br>
+        <p></p>
+    </div>
+
+    <!-- Padding -->
+    <div class="w3-row-padding"><br></div>
+
+    <!-- Ertha -->
+    <div class="w3-row-padding">
+
+        <!-- Link -->
+        <div class="w3-quarter w3-container w3-margin-bottom" style="max-width: 400px;">
+            <div class="w3-card w3-margin-bottom" style="width:100%">
+                <div class="w3-container w3-black">
+                    <p id="card-header">Jan 2023 - Aug 2023</p>
+                </div>
+                <img src="https://cdn.global.outfission.com/logo/Ertha.svg" alt="Ertha"
+                    style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
+                <div class="w3-container w3-black">
+                    <i class="fa fa-external-link" id="card-footer"></i>
+                    <a href="https://ertha.io/" target="_blank">Ertha.io</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tour -->
+        <div class="w3-threequarter w3-container w3-margin-bottom">
+            <div class="w3-col w3-container w3-margin-bottom" style="max-width:100%">
+                <div class="w3-container w3-black">
+                    <h1 style="margin-top: 0px;">Ertha</h1>
+                    <div id="tile-game">Metaverse</div>
+                    <div id="tile-game">City Builder</div>
+                    <div id="tile-game">Live Service</div>
+                    <br><div id="tile-break"></div>
+                    <div id="tile-skill">Unity</div>
+                    <div id="tile-skill">C#</div>
+                    <div id="tile-skill">TypeScript</div>
+                    <div id="tile-skill">MongoDB</div>
+                    <br><div id="tile-break"></div>
+                </div>
+                <div class="w3-container w3-white">
+                    <div id="ertha_desc"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PlayForm -->
+    <div class="w3-row-padding">
+
+        <!-- Link -->
+        <div class="w3-quarter w3-container w3-margin-bottom" style="max-width: 400px;">
+            <div class="w3-card w3-margin-bottom" style="width:100%">
+                <div class="w3-container w3-black">
+                    <p style="font-size: 12px;">Jun 2021 - Sep 2022</p>
+                </div>
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1729300/header.jpg" alt="PlayForm"
+                    style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
+                <div class="w3-container w3-black">
+                    <i class="fa fa-external-link" id="card-footer"></i>
+                    <a href="https://store.steampowered.com/app/1729300/PlayForm_Human_Dynamics/" target="_blank">PlayForm on Steam</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tour -->
+        <div class="w3-threequarter w3-container w3-margin-bottom">
+            <div class="w3-col w3-container w3-margin-bottom" style="max-width:100%">
+                <div class="w3-container w3-black">
+                    <h1 style="margin-top: 0px;">PlayForm: Human Dynamics</h1>
+                    <div id="tile-game">Physics Sandbox</div>
+                    <br><div id="tile-break"></div>
+                    <div id="tile-skill">Unity</div>
+                    <div id="tile-skill">C#</div>
+                    <br><div id="tile-break"></div>
+                </div>
+                <div class="w3-container w3-white">
+                    <div id="playform_desc"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEAT -->
+    <div class="w3-row-padding">
+
+        <!-- Link -->
+        <div class="w3-quarter w3-container w3-margin-bottom" style="max-width: 400px;">
+            <div class="w3-card w3-margin-bottom" style="width:100%">
+                <div class="w3-container w3-black">
+                    <p id="card-header">Dec 2015 - Jun 2021</p>
+                </div>
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/656240/header.jpg" alt="HEAT"
+                    style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
+                <div class="w3-container w3-black">
+                    <i class="fa fa-external-link" id="card-footer"></i>
+                    <a href="https://store.steampowered.com/app/656240/Heat/" target="_blank">HEAT on Steam</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tour -->
+        <div class="w3-threequarter w3-container w3-margin-bottom">
+            <div class="w3-col w3-container w3-margin-bottom" style="max-width:100%">
+                <div class="w3-container w3-black">
+                    <h1 style="margin-top: 0px;">HEAT</h1>
+                    <div id="tile-game">Wild West</div>
+                    <div id="tile-game">Survival Multiplayer</div>
+                    <br><div id="tile-break"></div>
+                    <div id="tile-skill">Unity</div>
+                    <div id="tile-skill">C#</div>
+                    <div id="tile-skill">PHP</div>
+                    <div id="tile-skill">SQL</div>
+                    <br><div id="tile-break"></div>
+                </div>
+                <div class="w3-container w3-white">
+                    <div id="heat_desc"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RoK -->
+    <div class="w3-row-padding">
+
+        <!-- Link -->
+        <div class="w3-quarter w3-container w3-margin-bottom" style="max-width: 400px;">
+            <div class="w3-card w3-margin-bottom" style="width:100%">
+                <div class="w3-container w3-black">
+                    <p id="card-header">Sep 2014 - Dec 2015</p>
+                </div>
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/344760/header.jpg" alt="Reign of Kings"
+                    style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
+                <div class="w3-container w3-black">
+                    <i class="fa fa-external-link" id="card-footer"></i>
+                    <a href="https://store.steampowered.com/app/344760/Reign_Of_Kings/" target="_blank">Reign of Kings on Steam</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tour -->
+        <div class="w3-threequarter w3-container w3-margin-bottom">
+            <div class="w3-col w3-container w3-margin-bottom" style="max-width:100%">
+                <div class="w3-container w3-black">
+                    <h1 style="margin-top: 0px;">Reign of Kings</h1>
+                    <div id="tile-game">Medieval</div>
+                    <div id="tile-game">Survival Multiplayer</div>
+                    <br><div id="tile-break"></div>
+                    <div id="tile-skill">Unity</div>
+                    <div id="tile-skill">C#</div>
+                    <div id="tile-skill">PHP</div>
+                    <div id="tile-skill">SQL</div>
+                    <br><div id="tile-break"></div>
+                </div>
+                <div class="w3-container w3-white">
+                    <div id="rok_desc"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- StarForge -->
+    <div class="w3-row-padding">
+
+        <!-- Link -->
+        <div class="w3-quarter w3-container w3-margin-bottom" style="max-width: 400px;">
+            <div class="w3-card w3-margin-bottom" style="width:100%">
+                <div class="w3-container w3-black">
+                    <p id="card-header">Oct 2013 - Sep 2014</p>
+                </div>
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/227680/header.jpg" alt="StarForge"
+                    style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
+                <div class="w3-container w3-black">
+                    <i class="fa fa-external-link" id="card-footer"></i>
+                    <a href="https://steamcommunity.com/app/227680/screenshots/" target="_blank">StarForge Steam Community</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tour -->
+        <div class="w3-threequarter w3-container w3-margin-bottom">
+            <div class="w3-col w3-container w3-margin-bottom" style="max-width:100%">
+                <div class="w3-container w3-black">
+                    <h1 style="margin-top: 0px;">StarForge</h1>
+                    <div id="tile-game">Science Fiction</div>
+                    <div id="tile-game">Survival Multiplayer</div>
+                    <div id="tile-game">Voxel</div>
+                    <br><div id="tile-break"></div>
+                    <div id="tile-skill">Unity</div>
+                    <div id="tile-skill">C#</div>
+                    <br><div id="tile-break"></div>
+                </div>
+                <div class="w3-container w3-white">
+                    <div id="starforge_desc"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script>
+    // Setup for XMLHttpRequest, as recommended for old IE versions.
+    if (typeof XMLHttpRequest === "undefined") {
+        XMLHttpRequest = function () {
+            try {
+                return new ActiveXObject("Msxml2.XMLHTTP.6.0");
+            }
+            catch (e) { }
+            try {
+                return new ActiveXObject("Msxml2.XMLHTTP.3.0");
+            }
+            catch (e) { }
+            try {
+                return new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            catch (e) { }
+            return undefined;
+        };
+    }
+
+    // Download a text file into an element.
+    function downloadText(elementID, path) {
+        function onLoad() {
+            if (this.status == 200) {
+                document.getElementById(elementID).insertAdjacentHTML("afterbegin", this.responseText);
+            }
+            else {
+                document.getElementById(elementID).insertAdjacentHTML("afterbegin", this.status + " - Failed to download this page.");
+            }
+        }
+
+        var request = new XMLHttpRequest();
+        request.onload = onLoad;
+        request.open("get", path, true);
+        request.send();
+    }
+
+    // download HTML inserts.
+    downloadText("ertha_desc", "https://zopmaxima.github.io/documents/ertha_desc.html");
+    downloadText("playform_desc", "https://zopmaxima.github.io/documents/playform_desc.html");
+    downloadText("heat_desc", "https://zopmaxima.github.io/documents/heat_desc.html");
+    downloadText("rok_desc", "https://zopmaxima.github.io/documents/rok_desc.html");
+    downloadText("starforge_desc", "https://zopmaxima.github.io/documents/starforge_desc.html");
+</script>
+
 </html>
