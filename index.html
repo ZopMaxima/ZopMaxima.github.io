@@ -53,6 +53,54 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: #000000A0;
+        }
+
+        .modal-content {
+            background-color: #000000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0px;
+            border: 1px solid #000000;
+            width: 100%;
+            max-width: 1920px;
+            max-height: 1080px;
+        }
+
+        .modal-close {
+            border-bottom-left-radius: 6px;
+            background-color: #000000A0;
+            color: #E00000;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin: 0px;
+            padding-top: 0px;
+            padding-bottom: 5px;
+            padding-left: 12px;
+            padding-right: 11px;
+            font-size: 24px;
+        }
+
+        .modal-close:hover,
+        .modal-close:focus {
+            color: #FF4040;
+            cursor: pointer;
+        } 
     </style>
 </head>
 
@@ -324,6 +372,18 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal Image -->
+    <div id="modal" class="modal">
+        <div></div>
+        <div class="w3-card-4 modal-content">
+            <!-- TODO: <i class="fa fa-chevron-left"></i> -->
+            <!-- TODO: <i class="fa fa-chevron-right"></i> -->
+            <span id="modalClose" class="modal-close"><i class="fa fa-window-close"></i></span>
+            <img id="modalImage" style="object-fit:contain; max-width:100%; aspect-ratio:16/9; align-self: center;"/>
+            <!-- TODO: <p class="modalText"></p> -->
+        </div>
+    </div>
 </body>
 
 <script>
@@ -363,12 +423,40 @@
         request.send();
     }
 
-    // download HTML inserts.
+    // Download HTML inserts.
     downloadText("ertha_desc", "https://zopmaxima.github.io/documents/ertha_desc.html");
     downloadText("playform_desc", "https://zopmaxima.github.io/documents/playform_desc.html");
     downloadText("heat_desc", "https://zopmaxima.github.io/documents/heat_desc.html");
     downloadText("rok_desc", "https://zopmaxima.github.io/documents/rok_desc.html");
     downloadText("starforge_desc", "https://zopmaxima.github.io/documents/starforge_desc.html");
+    
+    // Download an image and display a modal state.
+    function openImage(path) {
+        var modal = document.getElementById("modal");
+        modal.style.display = "block";
+        var image = document.getElementById("modalImage");
+        image.src = path;
+    }
+
+    // Close modal when clicking the background.
+    window.onclick = function (event) {
+        var modal = document.getElementById("modal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Close modal when 'X' is clicked.
+    var modalClose = document.getElementById("modalClose");
+    if (modalClose) {
+        modalClose.onclick = function () {
+            var modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+    }
+
+    // Download thumbnails.
+    // document.getElementById("thumb_sf").onclick = function () { openImage("pf_controls.png") };
 </script>
 
 </html>
