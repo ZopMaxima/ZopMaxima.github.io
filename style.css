@@ -54,17 +54,6 @@
     max-width: 400px;
 }
 
-.foldout {
-    background-color: #33669900;
-    transition: max-height 0.2s ease-out;
-}
-
-    .foldout:hover
-    .foldout:focus {
-        background-color: #33669940;
-        cursor: pointer;
-    }
-
 .modal {
     display: none;
     position: fixed;
@@ -112,3 +101,21 @@
         color: #FF4040;
         cursor: pointer;
     }
+
+details[open] summary ~ * {
+    animation: sweep .25s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+details summary {
+    cursor: pointer;
+}
