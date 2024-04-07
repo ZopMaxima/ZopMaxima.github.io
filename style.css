@@ -1,0 +1,114 @@
+.card-header {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.card-footer-top {
+    margin-top: 10px;
+}
+
+.card-footer-bottom {
+    margin-bottom: 10px;
+}
+
+.tile-game {
+    border-radius: 4px;
+    background: #336699;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+    max-width: fit-content;
+    float: left;
+}
+
+.tile-skill {
+    border-radius: 4px;
+    background: #339933;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+    max-width: fit-content;
+    float: left;
+}
+
+.tile-break {
+    margin-bottom: 10px;
+}
+
+.background {
+    background-image: url("https://zopmaxima.github.io/documents/background.png");
+    background-color: #606060;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-line {
+    background-color: #000000;
+    height: 1px;
+}
+
+.thumbnail-game {
+    max-width: 400px;
+}
+
+.foldout {
+    background-color: #33669900;
+    transition: max-height 0.2s ease-out;
+}
+
+    .foldout:hover
+    .foldout:focus {
+        background-color: #33669940;
+        cursor: pointer;
+    }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000000A0;
+}
+
+.modal-content {
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0px;
+    border: 1px solid #000000;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+.modal-close {
+    border-bottom-left-radius: 6px;
+    background-color: #000000A0;
+    color: #E00000;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 11px;
+    font-size: 24px;
+}
+
+    .modal-close:hover,
+    .modal-close:focus {
+        color: #FF4040;
+        cursor: pointer;
+    }

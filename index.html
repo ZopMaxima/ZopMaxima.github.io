@@ -1,107 +1,13 @@
 <!DOCTYPE html>
+
 <html>
-<title>MJ - Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <head>
-    <style>
-        .card-header {
-            margin-top: 16px;
-            margin-bottom: 16px;
-        }
-
-        .card-footer-top {
-            margin-top: 10px;
-        }
-
-        .card-footer-bottom {
-            margin-bottom: 10px;
-        }
-
-        .tile-game {
-            border-radius: 4px;
-            background: #336699;
-            padding-left: 5px;
-            padding-right: 5px;
-            margin-right: 10px;
-            max-width: fit-content;
-            float: left;
-        }
-
-        .tile-skill {
-            border-radius: 4px;
-            background: #339933;
-            padding-left: 5px;
-            padding-right: 5px;
-            margin-right: 10px;
-            max-width: fit-content;
-            float: left;
-        }
-
-        .tile-break {
-            margin-bottom: 10px;
-        }
-        
-        .background {
-            background-image: url("https://zopmaxima.github.io/documents/background.png");
-            background-color: #606060;
-            height: 100%;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: #000000A0;
-        }
-
-        .modal-content {
-            background-color: #000000;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            margin: 0;
-            padding: 0px;
-            border: 1px solid #000000;
-            width: 100%;
-            max-width: 1920px;
-            max-height: 1080px;
-        }
-
-        .modal-close {
-            border-bottom-left-radius: 6px;
-            background-color: #000000A0;
-            color: #E00000;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            margin: 0px;
-            padding-top: 0px;
-            padding-bottom: 5px;
-            padding-left: 12px;
-            padding-right: 11px;
-            font-size: 24px;
-        }
-
-        .modal-close:hover,
-        .modal-close:focus {
-            color: #FF4040;
-            cursor: pointer;
-        } 
-    </style>
+    <title>MJ - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="background">
@@ -109,9 +15,9 @@
     <div class="w3-row-padding"><br></div>
 
     <!-- Banner -->
-    <div class="w3-card-4" style="background-color: #000000; height: 1px;"></div>
+    <div class="w3-card-4 banner-line"></div>
     <div class="w3-card-4 w3-container w3-center"
-        style="background-color: #ffffff; background-image: radial-gradient(circle, #ffffff, #ffffff, #ffa000);">
+         style="background-color: #ffffff; background-image: radial-gradient(circle, #ffffff, #ffffff, #ffa000);">
         <h1 style="font-size: 60px; margin: 0px;"><b>Max Jackman</b></h1>
         <h4 style="margin: 0px;"><b>Unity Game Developer</b></h4>
         <p></p>
@@ -136,7 +42,7 @@
             </tr>
         </table>
     </div>
-    <div class="w3-card-4" style="background-color: #000000; height: 1px;"></div>
+    <div class="w3-card-4 banner-line"></div>
 
     <!-- Padding -->
     <div class="w3-row-padding w3-margin-bottom"><br></div>
@@ -145,13 +51,13 @@
     <div class="w3-row-padding">
 
         <!-- Link -->
-        <div class="w3-quarter w3-container w3-margin-bottom" style="max-width: 400px;">
+        <div class="w3-quarter w3-container w3-margin-bottom thumbnail-game">
             <div class="w3-card-2 w3-margin-bottom" style="width:100%">
                 <div class="w3-container w3-black">
                     <p class="card-header">Jan 2023 - Aug 2023</p>
                 </div>
                 <img src="https://cdn.global.outfission.com/logo/Ertha.svg" alt="Ertha"
-                    style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
+                     style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
                 <div class="w3-container w3-black">
                     <div>
                         <i class="fa fa-external-link card-footer-top"></i>
@@ -193,13 +99,13 @@
     <div class="w3-row-padding">
 
         <!-- Link -->
-        <div class="w3-quarter w3-container w3-margin-bottom" style="max-width: 400px;">
+        <div class="w3-quarter w3-container w3-margin-bottom thumbnail-game">
             <div class="w3-card-2 w3-margin-bottom" style="width:100%">
                 <div class="w3-container w3-black">
                     <p class="card-header">Jun 2021 - Sep 2022</p>
                 </div>
                 <img src="https://cdn.akamai.steamstatic.com/steam/apps/1729300/header.jpg" alt="PlayForm"
-                    style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
+                     style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
                 <div class="w3-container w3-black">
                     <div>
                         <i class="fa fa-external-link card-footer-top"></i>
@@ -237,13 +143,13 @@
     <div class="w3-row-padding">
 
         <!-- Link -->
-        <div class="w3-quarter w3-container w3-margin-bottom" style="max-width: 400px;">
+        <div class="w3-quarter w3-container w3-margin-bottom thumbnail-game">
             <div class="w3-card-2 w3-margin-bottom" style="width:100%">
                 <div class="w3-container w3-black">
                     <p class="card-header">Dec 2015 - Jun 2021</p>
                 </div>
                 <img src="https://cdn.akamai.steamstatic.com/steam/apps/656240/header.jpg" alt="HEAT"
-                    style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
+                     style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
                 <div class="w3-container w3-black">
                     <div>
                         <i class="fa fa-external-link card-footer-top"></i>
@@ -284,13 +190,13 @@
     <div class="w3-row-padding">
 
         <!-- Link -->
-        <div class="w3-quarter w3-container w3-margin-bottom" style="max-width: 400px;">
+        <div class="w3-quarter w3-container w3-margin-bottom thumbnail-game">
             <div class="w3-card-2 w3-margin-bottom" style="width:100%">
                 <div class="w3-container w3-black">
                     <p class="card-header">Sep 2014 - Dec 2015</p>
                 </div>
                 <img src="https://cdn.akamai.steamstatic.com/steam/apps/344760/header.jpg" alt="Reign of Kings"
-                    style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
+                     style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
                 <div class="w3-container w3-black">
                     <div>
                         <i class="fa fa-external-link card-footer-top"></i>
@@ -331,13 +237,13 @@
     <div class="w3-row-padding">
 
         <!-- Link -->
-        <div class="w3-quarter w3-container w3-margin-bottom" style="max-width: 400px;">
+        <div class="w3-quarter w3-container w3-margin-bottom thumbnail-game">
             <div class="w3-card-2 w3-margin-bottom" style="width:100%">
                 <div class="w3-container w3-black">
                     <p class="card-header">Oct 2013 - Sep 2014</p>
                 </div>
                 <img src="https://cdn.akamai.steamstatic.com/steam/apps/227680/header.jpg" alt="StarForge"
-                    style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
+                     style="object-fit:contain; max-width:100%; aspect-ratio:460/215; align-self: center; background-color: white;">
                 <div class="w3-container w3-black">
                     <div>
                         <i class="fa fa-external-link card-footer-top"></i>
@@ -380,83 +286,13 @@
             <!-- TODO: <i class="fa fa-chevron-left"></i> -->
             <!-- TODO: <i class="fa fa-chevron-right"></i> -->
             <span id="modalClose" class="modal-close"><i class="fa fa-window-close"></i></span>
-            <img id="modalImage" style="object-fit:contain; max-width:100%; aspect-ratio:16/9; align-self: center;"/>
+            <img id="modalImage" style="object-fit:contain; max-width:100%; aspect-ratio:16/9; align-self: center;" />
             <!-- TODO: <p class="modalText"></p> -->
         </div>
     </div>
+
+    <!-- Run Script -->
+    <script src="script.js"></script>
 </body>
-
-<script>
-    // Setup for XMLHttpRequest, as recommended for old IE versions.
-    if (typeof XMLHttpRequest === "undefined") {
-        XMLHttpRequest = function () {
-            try {
-                return new ActiveXObject("Msxml2.XMLHTTP.6.0");
-            }
-            catch (e) { }
-            try {
-                return new ActiveXObject("Msxml2.XMLHTTP.3.0");
-            }
-            catch (e) { }
-            try {
-                return new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            catch (e) { }
-            return undefined;
-        };
-    }
-
-    // Download a text file into an element.
-    function downloadText(elementID, path) {
-        function onLoad() {
-            if (this.status == 200) {
-                document.getElementById(elementID).insertAdjacentHTML("afterbegin", this.responseText);
-            }
-            else {
-                document.getElementById(elementID).insertAdjacentHTML("afterbegin", this.status + " - Failed to download this page.");
-            }
-        }
-
-        var request = new XMLHttpRequest();
-        request.onload = onLoad;
-        request.open("get", path, true);
-        request.send();
-    }
-
-    // Download HTML inserts.
-    downloadText("ertha_desc", "https://zopmaxima.github.io/documents/ertha_desc.html");
-    downloadText("playform_desc", "https://zopmaxima.github.io/documents/playform_desc.html");
-    downloadText("heat_desc", "https://zopmaxima.github.io/documents/heat_desc.html");
-    downloadText("rok_desc", "https://zopmaxima.github.io/documents/rok_desc.html");
-    downloadText("starforge_desc", "https://zopmaxima.github.io/documents/starforge_desc.html");
-    
-    // Download an image and display a modal state.
-    function openImage(path) {
-        var modal = document.getElementById("modal");
-        modal.style.display = "block";
-        var image = document.getElementById("modalImage");
-        image.src = path;
-    }
-
-    // Close modal when clicking the background.
-    window.onclick = function (event) {
-        var modal = document.getElementById("modal");
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-    // Close modal when 'X' is clicked.
-    var modalClose = document.getElementById("modalClose");
-    if (modalClose) {
-        modalClose.onclick = function () {
-            var modal = document.getElementById("modal");
-            modal.style.display = "none";
-        }
-    }
-
-    // Download thumbnails.
-    // document.getElementById("thumb_sf").onclick = function () { openImage("pf_controls.png") };
-</script>
 
 </html>
